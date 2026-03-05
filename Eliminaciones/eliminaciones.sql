@@ -26,4 +26,4 @@ where valoracion <7
 -- Transacciones
 -- 1. elimina las transferencias que se hayan hecho entre las 14:00 y 18:00 del mes de agosto del año actual
 delete from transacciones
-where hora>='14:00' and hora <='18:00' and extract(month from fecha)=8
+where hora>='14:00' and hora <='18:00' and extract(hour from fecha)=8
