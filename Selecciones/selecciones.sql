@@ -26,7 +26,6 @@ select nombre,cedula from estudiantes
 select nombre from estudiantes where cedula like '17%'
 
 -- 3. select que traiga los nombres completos de todos los estudiantes cuyo nombre empiece con A
-
 select nombre,apellido  from estudiantes where nombre like 'A%'
 
 --Registros_entradas
@@ -57,4 +56,4 @@ select * from  transacciones where tipo ='D'
 select * from  transacciones where monto between money(200) and money(2000)
 
 -- 3. seleccionar el codigo, monto, tipo y fecha de las transacciones que tengas una fecha diferente de null
-select codigo,monto,tipo,fecha from transacciones where fecha != null
+select codigo,monto,tipo,fecha from transacciones where fecha is not null
